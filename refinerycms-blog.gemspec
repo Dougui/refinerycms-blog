@@ -130,7 +130,6 @@ Gem::Specification.new do |s|
     features/tags.feature
     lib
     lib/gemspec.rb
-    lib/gemspec.rb~
     lib/generators
     lib/generators/refinerycms_blog_generator.rb
     lib/refinery
