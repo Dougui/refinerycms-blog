@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name              = %q{refinerycms-blog}
   s.version           = %q{1.5.2}
   s.description       = %q{A really straightforward open source Ruby on Rails blog engine designed for integration with RefineryCMS.}
-  s.date              = %q{2011-05-28}
+  s.date              = %q{2011-10-30}
   s.summary           = %q{Ruby on Rails blogging engine for RefineryCMS.}
   s.email             = %q{info@refinerycms.com}
   s.homepage          = %q{http://refinerycms.com/blog}
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.add_dependency    'refinerycms-core',   '~> 1.0.0'
   s.add_dependency    'filters_spam',       '~> 0.2'
   s.add_dependency    'acts-as-taggable-on'
-  s.add_dependency    'seo_meta',           '~> 1.1.0'
+  s.add_dependency    'seo_meta',           '~> 1.2.0'
 
   # Development dependencies
   s.add_development_dependency 'factory_girl'
@@ -46,45 +46,45 @@ Gem::Specification.new do |s|
     app/views
     app/views/admin
     app/views/admin/blog
-    app/views/admin/blog/_submenu.html.erb
     app/views/admin/blog/categories
-    app/views/admin/blog/categories/_category.html.erb
-    app/views/admin/blog/categories/_form.html.erb
-    app/views/admin/blog/categories/_sortable_list.html.erb
     app/views/admin/blog/categories/edit.html.erb
     app/views/admin/blog/categories/index.html.erb
     app/views/admin/blog/categories/new.html.erb
+    app/views/admin/blog/categories/_category.html.erb
+    app/views/admin/blog/categories/_form.html.erb
+    app/views/admin/blog/categories/_sortable_list.html.erb
     app/views/admin/blog/comments
-    app/views/admin/blog/comments/_comment.html.erb
-    app/views/admin/blog/comments/_sortable_list.html.erb
     app/views/admin/blog/comments/index.html.erb
     app/views/admin/blog/comments/show.html.erb
+    app/views/admin/blog/comments/_comment.html.erb
+    app/views/admin/blog/comments/_sortable_list.html.erb
     app/views/admin/blog/posts
+    app/views/admin/blog/posts/edit.html.erb
+    app/views/admin/blog/posts/index.html.erb
+    app/views/admin/blog/posts/new.html.erb
+    app/views/admin/blog/posts/uncategorized.html.erb
     app/views/admin/blog/posts/_form.css.erb
     app/views/admin/blog/posts/_form.html.erb
     app/views/admin/blog/posts/_form.js.erb
     app/views/admin/blog/posts/_post.html.erb
     app/views/admin/blog/posts/_sortable_list.html.erb
-    app/views/admin/blog/posts/edit.html.erb
-    app/views/admin/blog/posts/index.html.erb
-    app/views/admin/blog/posts/new.html.erb
-    app/views/admin/blog/posts/uncategorized.html.erb
     app/views/admin/blog/settings
     app/views/admin/blog/settings/notification_recipients.html.erb
+    app/views/admin/blog/_submenu.html.erb
     app/views/blog
     app/views/blog/categories
     app/views/blog/categories/show.html.erb
     app/views/blog/comment_mailer
     app/views/blog/comment_mailer/notification.html.erb
     app/views/blog/posts
-    app/views/blog/posts/_comment.html.erb
-    app/views/blog/posts/_nav.html.erb
-    app/views/blog/posts/_post.html.erb
     app/views/blog/posts/archive.html.erb
     app/views/blog/posts/index.html.erb
     app/views/blog/posts/index.rss.builder
     app/views/blog/posts/show.html.erb
     app/views/blog/posts/tagged.html.erb
+    app/views/blog/posts/_comment.html.erb
+    app/views/blog/posts/_nav.html.erb
+    app/views/blog/posts/_post.html.erb
     app/views/blog/shared
     app/views/blog/shared/_categories.html.erb
     app/views/blog/shared/_post.html.erb
@@ -130,6 +130,7 @@ Gem::Specification.new do |s|
     features/tags.feature
     lib
     lib/gemspec.rb
+    lib/gemspec.rb~
     lib/generators
     lib/generators/refinerycms_blog_generator.rb
     lib/refinery
@@ -142,9 +143,9 @@ Gem::Specification.new do |s|
     public/images/refinerycms-blog/icons
     public/images/refinerycms-blog/icons/cog.png
     public/images/refinerycms-blog/icons/comment.png
+    public/images/refinerycms-blog/icons/comments.png
     public/images/refinerycms-blog/icons/comment_cross.png
     public/images/refinerycms-blog/icons/comment_tick.png
-    public/images/refinerycms-blog/icons/comments.png
     public/images/refinerycms-blog/icons/down.gif
     public/images/refinerycms-blog/icons/folder.png
     public/images/refinerycms-blog/icons/folder_add.png
